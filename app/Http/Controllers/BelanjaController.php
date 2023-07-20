@@ -16,6 +16,7 @@ class BelanjaController extends Controller
 
         return view('belanja', compact('cabang', 'barang'));
     }
+    
 
     public function pesan(Request $request)
 {

@@ -3,9 +3,13 @@
 
 @section('content')
 <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+<link rel="stylesheet" href="{{ asset('css/beli.css') }}">
     <div class="container">
         <h1>Form Belanja</h1>
-
+            <div class="form-group">
+                <label for="gambar"></label>
+                <img class="img_barang" src="{{ asset('images/LobsterKonsumsi.png') }}" alt="">
+            </div>
         <form action="{{ route('belanja.pesan') }}" method="POST" enctype="multipart/form-data">
             @csrf 
             <div class="form-group">
@@ -37,11 +41,6 @@
             <div class="form-group">
                 <label for="jumlah_tersedia">Jumlah Tersedia</label>
                 <input type="text" name="jumlah_tersedia" id="jumlah_tersedia" class="form-control" readonly>
-            </div>
-
-            <div class="form-group">
-                <label for="gambar">Gambar</label>
-                <img id="gambar" src="#" alt="Gambar Barang" class="img-thumbnail" width="100">
             </div>
 
             <div class="form-group">
@@ -87,7 +86,7 @@
                 <input type="text" name="nomor_rekening" id="nomor_rekening" class="form-control" readonly>
             </div>
 
-            <button type="submit" class="btn btn-primary">Pesan</button>
+            <button type="submit" class="btn btn-primary mt-5">Pesan</button>
         </form>
     </div>
 

@@ -95,3 +95,8 @@
   .box-alamat{
     margin: 5vh;
   }
+  .info_pembayaran{
+    background-color: rgb(185, 185, 185);
+    padding: 40px;
+    border-radius: 10px;
+  }

@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+<nav class="navbar navbar-expand-md navbar-dark bg-white shadow-sm">
     <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">
-            {{ ('LobsterIndo') }}
+        <a class="navbar-brand" href="{{ url('/beranda') }}">
+           <b style="font-size: 1.3em" >LobsterIndo</b>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@
                             <a class="nav-link" href="{{ route('partnership.index') }}">{{ __('Partnership') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('belanja.index') }}">{{ __('Belanja') }}</a>
+                            <a class="nav-link" href="{{ URL('/menubelanja') }}">{{ __('Belanja') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('riwayat.pembelian') }}">{{ __('Riwayat Pembelian') }}</a>
